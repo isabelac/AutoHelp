@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AutoHelp</string>
+    <string name="EdPerfil">Editar Perfil</string>
+    <string name="sair">Sair</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="localizar">Localizar Oficinas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="publicar_duvida">Publicar Dúvida</string>
+    <string name="publicar">Publicar</string>
+</resources>

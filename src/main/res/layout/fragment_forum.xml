@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ahv1.app.autohelpv2.fragment.ForumFragment">
+
+    <EditText
+        android:id="@+id/txtpost"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:background="@color/colorText"
+        android:layout_centerHorizontal="true"
+        android:elevation="5dp"
+        android:textColorHint="@color/colorTeste"
+        android:hint="@string/publicar_duvida"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/publicar"
+        android:layout_below="@+id/txtpost"
+        android:layout_alignEnd="@+id/txtpost"
+        android:background="@color/colorPrimary"/>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="10dp">
+
+        <ListView
+            android:id="@+id/List_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="2dp"
+            android:layout_gravity="center_horizontal|top"
+            android:divider="@color/colorTeste"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout>

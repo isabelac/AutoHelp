@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ahv1.app.autohelpv2.Activity.RespostaActivity">
+
+    <include
+        android:id="@+id/toolbarConversa"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textResposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarConversa"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_horizontal"
+        android:text="olaaaaaaaaaaa"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/Linear"
+        android:layout_below="@+id/textResposta"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditResposta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:elevation="5dp"/>
+
+        <Button
+            android:id="@+id/buttonR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtpost"
+            android:layout_below="@+id/txtpost"
+            android:background="@color/colorPrimary"
+            android:text="@string/publicar" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/Linear"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
